@@ -1,0 +1,45 @@
+section{
+    height: 100vh;
+   
+    .device{
+    margin: 10% auto;
+       
+       
+    }
+    
+    .first{
+        font-family: Montserrat;
+font-size: 30px;
+font-weight: 700;
+line-height: 36.57px;
+text-align: center;
+    }
+    .last{
+font-size: 20px;
+font-weight: 500;
+height: 180px;
+text-align: left;
+width: 970px;
+
+margin: auto;
+    }
+}
+
+
+@media (max-width:768px) {
+    section{
+        height: 100vh;
+        .device{
+            margin: 0;
+        }
+        .first{
+            font-size: 22px;
+        }
+        .last{
+            width: 95vw;
+            height: auto;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}

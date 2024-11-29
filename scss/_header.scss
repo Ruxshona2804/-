@@ -1,0 +1,157 @@
+header {
+    background-image: url(../image/грузовик.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+
+.hamburger{
+    width: 33px;
+    height: 2px;
+    background-color: white;
+    margin-top: 5px;
+    display: block;
+}
+    .navbar {
+        height: 1024px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+
+        img {
+            width: 70px;
+            height: 63px;
+        }
+
+        ul {
+            display: flex;
+            gap: 40px;
+            width: 660px;
+
+            li {
+                font-family: Montserrat;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24.38px;
+                text-align: center;
+
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover {
+                        color: $orange;
+                    }
+
+                }
+
+                select {
+                    background: none;
+                    border: none;
+                    color: white;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 19.5px;
+
+                    &:hover {
+                        color: $orange;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .head_main {
+        width: 667px;
+        height: 220px;
+        border-radius: 8px;
+        margin: 30% 0 0;
+
+        p {
+            font-family: Montserrat;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 54px;
+            text-align: left;
+            color: white;
+
+
+        }
+
+        button {
+            width: 248px;
+            height: 62px;
+            border-radius: 8px;
+            background: rgba(17, 78, 134, 1);
+            font-family: Montserrat;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 32px;
+            text-align: center;
+            border: none;
+            outline: none;
+            color: white;
+
+            &:hover {
+                background-color: rgba(255, 140, 0, 1);
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    header {
+        background-image: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+
+        nav {
+            ul {
+                display: none;
+                position: absolute;
+            }
+        }
+
+        .head_main {
+            p {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 36px;
+                text-align: center;
+                width: 350px;
+                height: 550px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               
+            }
+
+            button {
+                width: 200px;
+                height: 62px;
+                margin: 0 10%;
+            }
+        }
+
+    }
+}
+
+
+@media (min-width:1024px) {
+    header{
+        .hamburgers{
+            display: none;
+        }
+    }
+    
+}
